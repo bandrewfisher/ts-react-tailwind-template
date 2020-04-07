@@ -20,7 +20,8 @@
     "build-tsc": "tsc",
     "build:styles": "postcss src/tailwind.css -o src/styles.css",
     "prebuild": "yarn build:styles",
-    "prestart": "yarn build:styles"
+    "prestart": "yarn build:styles",
+    "lint": "eslint src/**/*.tsx src/**/*.js --fix --cache"
   },
   "eslintConfig": {
     "extends": "react-app"
